@@ -1,5 +1,5 @@
-const imgArrow = "src/assets/curved-arrow-with-broken-line.png";
-const imgComputer = "src/assets/computer.svg";
+const imgArrow = "../../src/assets/curved-arrow-with-broken-line.png";
+const imgComputer = "../../src/assets/computer.svg";
 import { motion } from "framer-motion";
 const About = () => {
   return (
