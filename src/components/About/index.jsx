@@ -1,4 +1,3 @@
-
 import ImgArrow from "../../assets/curved-arrow-with-broken-line.png";
 import ImgComputer from "../../assets/computer.svg";
 import { motion } from "framer-motion";
