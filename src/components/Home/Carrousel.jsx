@@ -31,7 +31,7 @@ const Carrousel = () => {
       }}
       modules={[Autoplay]}
     >
-      {icons.map(({ id, height, url, alt }) => {
+      {icons.map(({ id, url, alt }) => {
         return (
           <SwiperSlide
             key={id}
@@ -42,7 +42,7 @@ const Carrousel = () => {
               alignItems: "center",
             }}
           >
-            <img className={`h-[${height}px]`} src={url} alt={alt} />
+            <img className={"h-[45px]"} src={url} alt={alt} />
           </SwiperSlide>
         );
       })}
