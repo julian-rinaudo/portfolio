@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Carrousel from "./Carrousel";
 import ImgJs from "../../assets/pseudo.png"
+import IconStar from "../../assets/63934072b143767c6aa620f8_start-icon.svg.png"
 const Home = () => {
   return (
     <div className=" flex flex-col bg-primary h-screen">
@@ -16,7 +17,7 @@ const Home = () => {
         whileInView={{ opacity: 1, x: 10 }}
         viewport={{ once: false, amount: 0.7 }}
         className=" w-5 absolute top-16 left-6"
-        src="src/assets/63934072b143767c6aa620f8_start-icon.svg.png"
+        src={IconStar}
         alt="start icon"
       />
       <motion.img
@@ -25,7 +26,7 @@ const Home = () => {
         whileInView={{ opacity: 1, x: -10 }}
         viewport={{ once: false, amount: 0.7 }}
         className=" w-8 absolute bottom-[35%] right-8"
-        src="src/assets/63934072b143767c6aa620f8_start-icon.svg.png"
+        src={IconStar}
         alt="start icon"
       />
       <motion.div
