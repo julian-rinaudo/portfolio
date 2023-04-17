@@ -1,6 +1,7 @@
 import React from "react";
-import Carrousel from "./Carrousel";
 import { motion } from "framer-motion";
+import Carrousel from "./Carrousel";
+import ImgJs from "../../assets/pseudo.png"
 const Home = () => {
   return (
     <div className=" flex flex-col bg-primary h-screen">
@@ -39,7 +40,7 @@ const Home = () => {
           <p className="font-body font-bold">FullStack</p>
           <img
             className=" object-contain w-24"
-            src="src/assets/pseudo.png"
+            src={ImgJs}
             alt="icon JS"
           />
         </div>

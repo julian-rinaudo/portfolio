@@ -1,5 +1,5 @@
-const imgArrow = "src/assets/curved-arrow-with-broken-line.png";
-const imgComputer = "src/assets/computer.svg";
+import ImgArrow from "../../assets/curved-arrow-with-broken-line.png";
+import ImgComputer from "../../assets/computer.svg";
 import { motion } from "framer-motion";
 const About = () => {
   return (
@@ -35,7 +35,7 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0, rotate: "50deg" }}
           viewport={{ once: false, amount: 0.7 }}
           className="w-[100px] rotate-60"
-          src={imgArrow}
+          src={ImgArrow}
           alt="arrow"
         />
         <motion.div
@@ -45,7 +45,7 @@ const About = () => {
           viewport={{ once: false, amount: 0.7 }}
           className="flex justify-center items-center gap-2 pt-12"
         >
-          <img className="w-[60px]" src={imgComputer} alt="computer" />
+          <img className="w-[60px]" src={ImgComputer} alt="computer" />
           <div className="text-[13px]">
             <p className="font-bold">+800 Horas</p>
             <p>Programando</p>
