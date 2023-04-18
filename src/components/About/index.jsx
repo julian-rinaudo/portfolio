@@ -3,7 +3,7 @@ import ImgComputer from "../../assets/computer.svg";
 import { motion } from "framer-motion";
 const About = () => {
   return (
-    <div className=" bg-primary font-body px-10 h-[100vh]">
+    <div className=" bg-primary font-body px-10 h-[95vh]">
       <div className="flex flex-col justify-center items-center">
         <motion.h1
           initial={{ opacity: 0, y: 100 }}
@@ -19,7 +19,7 @@ const About = () => {
           transition={{ duration: 1 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.7 }}
-          className="text-center leading-7 pb-7"
+          className="text-center leading-7 pb-10"
         >
           Tengo 22 años, estudie y finalize la Tecnicatura en Marketing.
           Terminando esta carrera fue donde descubri y me apacione por la
