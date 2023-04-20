@@ -9,7 +9,7 @@ const About = () => {
           initial={{ opacity: 0, y: 100 }}
           transition={{ duration: 1 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true, amount: 0.7 }}
           className="text-center font-medium text-[30px] py-10"
         >
           Sobre mi
@@ -18,13 +18,13 @@ const About = () => {
           initial={{ opacity: 0, y: 100 }}
           transition={{ duration: 1 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true, amount: 0.7 }}
           className="text-center leading-7 pb-10"
         >
           Tengo 22 años, estudie y finalize la Tecnicatura en Marketing.
           Terminando esta carrera fue donde descubri y me apacione por la
           programación. Y asi es como ademas de otros cursos realizados sobre
-          programación, curse con exito el{" "}
+          programación, curse con exito un{" "}
           <span className="font-bold">
             Bootcamp de programación FullStack de Plataforma 5.
           </span>
@@ -33,7 +33,7 @@ const About = () => {
           initial={{ opacity: 0, y: 100 }}
           transition={{ duration: 1 }}
           whileInView={{ opacity: 1, y: 0, rotate: "50deg" }}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true, amount: 0.7 }}
           className="w-[100px] rotate-60"
           src={ImgArrow}
           alt="arrow"
@@ -42,7 +42,7 @@ const About = () => {
           initial={{ opacity: 0, y: 100 }}
           transition={{ duration: 1 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true, amount: 0.7 }}
           className="flex justify-center items-center gap-2 pt-12"
         >
           <img className="w-[60px]" src={ImgComputer} alt="computer" />

@@ -6,7 +6,7 @@ import IconStar from "../../assets/63934072b143767c6aa620f8_start-icon.svg.png"
 import ImgCarrousel from "../..//assets/carrousel.png"
 const Home = () => {
   return (
-    <div className=" flex flex-col bg-primary h-screen">
+    <div className=" flex flex-col bg-primary min-h-[100vh]">
       {/* <img
         className="md:w-24 lg:w-32 xl:w-32 2xl:w-32 translate-y-[-15px] hidden md:flex "
         src="src/assets/63a0c6b60bea3337228ddf1b_orange-bracket-icon.webp.png"
@@ -60,7 +60,7 @@ const Home = () => {
       </div>
       <div className="flex flex-col justify-center items-center h-full relative">
         <img
-          className="w-full max-[640px]:h-[180px]"
+          className="w-full max-[640px]:h-[180px] "
           src={ImgCarrousel}
           alt=""
         />
