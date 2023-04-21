@@ -9,7 +9,7 @@ const About = () => {
           initial={{ opacity: 0, y: 100 }}
           transition={{ duration: 0.5 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount:0.3 }}
+          viewport={{ once: true, amount:0.3 }}
           className="text-center font-medium text-[40px] py-10"
         >
           Sobre mi
@@ -18,7 +18,7 @@ const About = () => {
           initial={{ opacity: 0, y: 100 }}
           transition={{ duration: 0.5 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true, amount: 0.7 }}
           className="about_p text-center leading-7 pb-14"
         >
           Tengo 22 años, estudie y finalize la Tecnicatura en Marketing.
@@ -33,7 +33,7 @@ const About = () => {
           initial={{ opacity: 0, y: 100 }}
           transition={{ duration: 0.5 }}
           whileInView={{ opacity: 1, y: 0, rotate: "50deg" }}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true, amount: 0.7 }}
           className="w-[100px] rotate-60"
           src={ImgArrow}
           alt="arrow"
@@ -42,7 +42,7 @@ const About = () => {
           initial={{ opacity: 0, y: 100 }}
           transition={{ duration: 0.5 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true, amount: 0.7 }}
           className="flex justify-center items-center gap-2 pt-12"
         >
           <img className="w-[60px]" src={ImgComputer} alt="computer" />
