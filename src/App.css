@@ -10,3 +10,23 @@
   box-sizing: border-box;
 }
 
+@media (min-height:800px) {
+  .home{
+    padding-top: 300px;
+  }
+  .home_name{
+    font-size: 37px;
+    margin-bottom: 5px;
+  }
+  .home_stack{
+    font-size: 45px;
+  }
+  .home_dev{
+    font-size: 45px;
+    margin-top: 5px;
+  }
+  .about_p{
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
