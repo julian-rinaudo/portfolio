@@ -60,7 +60,7 @@ const Home = () => {
       </div>
       <div className="flex flex-col justify-center items-center absolute bottom-0">
         <img
-          className="w-full max-[640px]:h-[180px] "
+          className="w-full max-[640px]:h-[240px] "
           src={ImgCarrousel}
           alt=""
         />

@@ -9,6 +9,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.proyects{
+  background-image: url(./assets/background.png);
+}
 
 @media (min-height:800px) {
   .home{
