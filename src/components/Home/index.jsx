@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import Carrousel from "./Carrousel";
 import ImgJs from "../../assets/pseudo.png";
@@ -46,12 +47,14 @@ const Home = () => {
       </motion.div>
       <div className="flex justify-center items-center">
         <div className="rounded-full drop-shadow-custom hover:drop-shadow-hover">
-          <button
-            className="font-body border-[2px] border-secondary rounded-full text-[17px] font-medium text-white py-[16px] px-[27px] bg-secondary hover:border-[2px] 
+          <Link to="proyects" smooth={true}>
+            <button
+              className="font-body border-[2px] border-secondary rounded-full text-[17px] font-medium text-white py-[16px] px-[27px] bg-secondary hover:border-[2px] 
        hover:border-secondary hover:bg-primary hover:text-secondary hover:rounded-[1rem]"
-          >
-            Proyectos
-          </button>
+            >
+              Proyectos
+            </button>
+          </Link>
         </div>
       </div>
       <div className="flex flex-col justify-center items-center">
