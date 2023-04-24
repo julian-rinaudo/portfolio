@@ -15,6 +15,9 @@ export default {
         custom: '3px 3px 0px #000',
         hover:'5px 5px 0px  #000'
       },
+      backgroundColor:{
+        card:"rgba(255, 255, 255, 0.2)"
+      }
     },
     fontFamily: {
       body:['Inter']
