@@ -1,4 +1,7 @@
 import { motion } from "framer-motion";
+import UseAnimations from "react-useanimations";
+import airplay from "react-useanimations/lib/airplay";
+import iconGitHub from "../../assets/iconGitHub.svg"
 import vectorIcon from "../../assets/Vector.svg";
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -69,6 +72,10 @@ const Card = () => {
               Sequelize
             </p>
           </div>
+          <div className="flex items-center justify-center mt-[40px] gap-[5px]">
+            <UseAnimations className="cursor-pointer" animation={airplay} strokeColor="white" size={40} />
+            <img className="h-[27px] cursor-pointer" src={iconGitHub} alt="icon github" />
+          </div>
         </div>
       </motion.div>
       <motion.div
@@ -104,7 +111,10 @@ const Card = () => {
             <p className=" bg-primary py-[4px] px-[7px] rounded-[12px] font-body font-medium opacity-[0.8]">
               Redux
             </p>
-
+          </div>
+          <div className="flex items-center justify-center mt-[40px] gap-[5px]">
+            <UseAnimations className="cursor-pointer" animation={airplay} strokeColor="white" size={40} />
+            <img className="h-[27px] cursor-pointer" src={iconGitHub} alt="icon github" />
           </div>
         </div>
       </motion.div>
@@ -150,6 +160,10 @@ const Card = () => {
             <p className=" bg-primary py-[4px] px-[7px] rounded-[12px] font-body font-medium opacity-[0.8]">
               Sequelize
             </p>
+          </div>
+          <div className="flex items-center justify-center mt-[40px] gap-[5px]">
+            <UseAnimations className="cursor-pointer" animation={airplay} strokeColor="white" size={40} />
+            <img className="h-[27px] cursor-pointer" src={iconGitHub} alt="icon github" />
           </div>
         </div>
       </motion.div>
