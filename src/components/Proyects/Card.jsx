@@ -72,9 +72,9 @@ const Card = () => {
               Sequelize
             </p>
           </div>
-          <div className="flex items-center justify-center mt-[40px] gap-[5px]">
-            <UseAnimations className="cursor-pointer" animation={airplay} strokeColor="white" size={40} />
-            <img className="h-[25px] cursor-pointer" src={iconGitHub} alt="icon github" />
+          <div className="flex items-center justify-center mt-[40px] gap-[7px]">
+            <UseAnimations className="cursor-pointer" animation={airplay} strokeColor="white" size={45} />
+            <img className="h-[35px] cursor-pointer" src={iconGitHub} alt="icon github" />
           </div>
         </div>
       </motion.div>
@@ -112,9 +112,9 @@ const Card = () => {
               Redux
             </p>
           </div>
-          <div className="flex items-center justify-center mt-[40px] gap-[5px]">
-            <UseAnimations className="cursor-pointer" animation={airplay} strokeColor="white" size={40} />
-            <img className="h-[25px] cursor-pointer" src={iconGitHub} alt="icon github" />
+          <div className="flex items-center justify-center mt-[40px] gap-[7px]">
+            <UseAnimations className="cursor-pointer" animation={airplay} strokeColor="white" size={45} />
+            <img className="h-[35px] cursor-pointer" src={iconGitHub} alt="icon github" />
           </div>
         </div>
       </motion.div>
@@ -161,9 +161,9 @@ const Card = () => {
               Sequelize
             </p>
           </div>
-          <div className="flex items-center justify-center mt-[40px] gap-[5px]">
-            <UseAnimations className="cursor-pointer" animation={airplay} strokeColor="white" size={40} />
-            <img className="h-[25px] cursor-pointer" src={iconGitHub} alt="icon github" />
+          <div className="flex items-center justify-center mt-[40px] gap-[7px]">
+            <UseAnimations className="cursor-pointer" animation={airplay} strokeColor="white" size={45} />
+            <img className="h-[35px] cursor-pointer" src={iconGitHub} alt="icon github" />
           </div>
         </div>
       </motion.div>
