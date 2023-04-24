@@ -74,7 +74,7 @@ const Card = () => {
           </div>
           <div className="flex items-center justify-center mt-[40px] gap-[5px]">
             <UseAnimations className="cursor-pointer" animation={airplay} strokeColor="white" size={40} />
-            <img className="h-[27px] cursor-pointer" src={iconGitHub} alt="icon github" />
+            <img className="h-[25px] cursor-pointer" src={iconGitHub} alt="icon github" />
           </div>
         </div>
       </motion.div>
@@ -114,7 +114,7 @@ const Card = () => {
           </div>
           <div className="flex items-center justify-center mt-[40px] gap-[5px]">
             <UseAnimations className="cursor-pointer" animation={airplay} strokeColor="white" size={40} />
-            <img className="h-[27px] cursor-pointer" src={iconGitHub} alt="icon github" />
+            <img className="h-[25px] cursor-pointer" src={iconGitHub} alt="icon github" />
           </div>
         </div>
       </motion.div>
@@ -163,7 +163,7 @@ const Card = () => {
           </div>
           <div className="flex items-center justify-center mt-[40px] gap-[5px]">
             <UseAnimations className="cursor-pointer" animation={airplay} strokeColor="white" size={40} />
-            <img className="h-[27px] cursor-pointer" src={iconGitHub} alt="icon github" />
+            <img className="h-[25px] cursor-pointer" src={iconGitHub} alt="icon github" />
           </div>
         </div>
       </motion.div>
