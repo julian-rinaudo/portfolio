@@ -8,12 +8,14 @@
   margin: 0 ;
   padding: 0;
   box-sizing: border-box;
+  overflow:hidden;
 }
 .proyects{
   background-image: url(./assets/background.png);
 }
-
-
+.active{
+  background: red;;
+}
 
 @media (min-height:800px) {
   .home{
