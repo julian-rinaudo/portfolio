@@ -13,9 +13,6 @@
 .proyects{
   background-image: url(./assets/background.png);
 }
-.active{
-  background: red;;
-}
 
 @media (min-height:800px) {
   .home{
