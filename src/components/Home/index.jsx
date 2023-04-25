@@ -1,13 +1,33 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { Link as LinkRoll } from 'react-scroll'
+import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
+import UseAnimations from "react-useanimations";
+import github from "react-useanimations/lib/github";
+import linkdin from "react-useanimations/lib/linkedin";
 import Carrousel from "./Carrousel";
 import ImgJs from "../../assets/pseudo.png";
 import IconStar from "../../assets/63934072b143767c6aa620f8_start-icon.svg.png";
-import ImgCarrousel from "../..//assets/carrousel.png";
+import ImgCarrousel from "../../assets/carrousel.png";
 const Home = () => {
   return (
     <section className="flex flex-col bg-primary min-h-[100vh]">
+      <div className="flex justify-end items-center p-5 gap-1">
+        <Link to={""}>
+          <UseAnimations
+            className="cursor-pointer"
+            animation={linkdin}
+            size={30}
+          />
+        </Link>
+        <Link to={""}>
+          <UseAnimations
+            className="cursor-pointer"
+            animation={github}
+            size={30}
+          />
+        </Link>
+      </div>
       {/* <img
         className="md:w-24 lg:w-32 xl:w-32 2xl:w-32 translate-y-[-15px] hidden md:flex "
         src="src/assets/63a0c6b60bea3337228ddf1b_orange-bracket-icon.webp.png"
@@ -36,7 +56,7 @@ const Home = () => {
         transition={{ duration: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
-        className="home text-center text-3xl pt-52 pb-28 px-4"
+        className="home text-center text-3xl pt-[150px] pb-28 px-4"
       >
         <p className="home_name font-body font-semibold">Soy Julian Rinaudo</p>
         <div className="flex justify-center items-center text-4xl gap-2">
@@ -47,21 +67,21 @@ const Home = () => {
       </motion.div>
       <div className="flex justify-center items-center">
         <div className="rounded-full drop-shadow-custom hover:drop-shadow-hover">
-          <Link to="proyects" smooth={true}>
+          <LinkRoll to="proyects" smooth={true}>
             <button
               className="font-body border-[2px] border-secondary rounded-full text-[17px] font-medium text-white py-[16px] px-[27px] bg-secondary hover:border-[2px] 
        hover:border-secondary hover:bg-primary hover:text-secondary hover:rounded-[1rem]"
             >
               Proyectos
             </button>
-          </Link>
+          </LinkRoll>
         </div>
       </div>
       <div className="flex flex-col justify-center items-center">
         <img
           className="w-full max-[640px]:h-[240px]"
           src={ImgCarrousel}
-          alt=""
+          alt="carrosel"
         />
         <div className="absolute flex justify-center items-center w-[85%] h-12 overflow-hidden">
           <div className="flex items-center w-[100%]">
