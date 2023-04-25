@@ -13,7 +13,7 @@ import IconPostgreSQL from "../assets/postgreSQL.svg";
 import IconGitHub from "../assets/GitHub-logo.svg";
 import IconGit from "../assets/Git-Icon-Black.svg";
 
-let icons = [
+const icons = [
   {
     id: 1,
     url: IconHtml,

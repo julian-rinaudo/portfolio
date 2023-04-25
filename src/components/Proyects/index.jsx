@@ -1,26 +1,7 @@
 import { motion } from "framer-motion";
 import iconBlue from "../../assets/639c93db3dd0bf18b1ae768a_blue-square-icon.svg";
-import Card from "./Card"
-const container = {
-  hidden: { opacity: 1, scale: 0 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      delayChildren: 0.3,
-      staggerChildren: 0.2,
-    },
-  },
-};
-
-const item = {
-  hidden: { y: 20, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-  },
-};
-
+import Card from "./Card";
+import proyects from "../../utils/proyects";
 const Proyects = () => {
   return (
     <section
@@ -45,7 +26,32 @@ const Proyects = () => {
       >
         Proyectos
       </motion.h2>
-      <Card />
+      {proyects.map(
+        ({
+          id,
+          img,
+          alt,
+          title,
+          description,
+          technologies,
+          github,
+          deploy,
+        }) => {
+          return (
+            <Card
+              key={id}
+              id={id}
+              img={img}
+              title={title}
+              description={description}
+              tech={technologies}
+              github={github}
+              deploy={deploy}
+              alt={alt}
+            />
+          );
+        }
+      )}
     </section>
   );
 };
