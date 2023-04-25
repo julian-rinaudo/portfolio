@@ -1,3 +1,4 @@
+import BrokenOffice from "../assets/Globant.png";
 const proyects = [
   {
     id: 1,
@@ -19,7 +20,7 @@ const proyects = [
   },
   {
     id: 2,
-    img: "",
+    img: BrokenOffice,
     title: "Broken Office",
     description: "App para Globant",
     technologies: ["React", "Redux", "Material UI"],

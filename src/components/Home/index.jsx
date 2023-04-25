@@ -1,6 +1,6 @@
 import React from "react";
-import { Link as LinkRoll } from 'react-scroll'
-import { Link } from 'react-router-dom';
+import { Link as LinkRoll } from "react-scroll";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import UseAnimations from "react-useanimations";
 import github from "react-useanimations/lib/github";
@@ -13,14 +13,14 @@ const Home = () => {
   return (
     <section className="flex flex-col bg-primary min-h-[100vh]">
       <div className="flex justify-end items-center p-5 gap-1">
-        <Link to={""}>
+        <Link to={"https://www.linkedin.com/in/julian-rinaudo/"}>
           <UseAnimations
             className="cursor-pointer"
             animation={linkdin}
             size={30}
           />
         </Link>
-        <Link to={""}>
+        <Link to={"https://github.com/julian-rinaudo"}>
           <UseAnimations
             className="cursor-pointer"
             animation={github}

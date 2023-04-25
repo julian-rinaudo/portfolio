@@ -26,9 +26,9 @@ const ContentCard = ({
   return (
     <>
       <motion.div variants={item}>
-        <div className="min-h-[220px] bg-primary">
+        <div className=" overflow-hidden min-h-[220px] bg-primary">
           <img
-            className="w-full min-h-[220px] max-h-[282px] object-cover"
+            className=" hover:scale-[1.1] ease-out duration-[0.3s] w-full min-h-[220px] max-h-[282px] object-cover"
             src={img ? img : ""}
             alt={alt}
           />
