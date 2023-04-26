@@ -6,7 +6,7 @@ const Proyects = () => {
   return (
     <section
       id="proyects"
-      className=" proyects relative pb-[100px] w-[100%] bg-top bg-auto bg-emerald-500 "
+      className=" proyects relative pb-[100px] w-[100%] bg-top bg-auto"
     >
       <motion.img
         initial={{ opacity: 0, x: 24 }}

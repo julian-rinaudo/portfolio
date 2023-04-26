@@ -46,6 +46,42 @@ const proyects = [
     deploy: "a",
     alt:"img ecommerce"
   },
+  {
+    id: 4,
+    img: "",
+    title: "E-Commerce",
+    description: "App para customizar y comprar remeras",
+    technologies: [
+      "React",
+      "Redux",
+      "Tailwind",
+      "PostgreSQL",
+      "Express",
+      "Node",
+      "Sequelize",
+    ],
+    github: "",
+    deploy: "a",
+    alt:"img ecommerce"
+  },
+  {
+    id: 5,
+    img: "",
+    title: "E-Commerce",
+    description: "App para customizar y comprar remeras",
+    technologies: [
+      "React",
+      "Redux",
+      "Tailwind",
+      "PostgreSQL",
+      "Express",
+      "Node",
+      "Sequelize",
+    ],
+    github: "",
+    deploy: "a",
+    alt:"img ecommerce"
+  },
 ];
 
 export default proyects;
