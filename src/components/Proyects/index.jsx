@@ -40,7 +40,6 @@ const Proyects = () => {
           return (
             <Card
               key={id}
-              id={id}
               img={img}
               title={title}
               description={description}

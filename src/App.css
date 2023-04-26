@@ -10,10 +10,25 @@
   box-sizing: border-box;
   overflow:hidden;
 }
+
+/* Fondo de la seccion proyectos */
 .proyects{
   background-image: url(./assets/background.png);
 }
 
+
+/* Estilo del boton al hacer hover */
+.button {
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 8rem;
+  background-color: #fa8000;
+  -webkit-transition: border-radius .2s cubic-bezier(.25, .46, .45, .94),border-color .2s cubic-bezier(.25, .46, .45, .94),background-color .2s cubic-bezier(.25, .46, .45, .94),color .2s cubic-bezier(.25, .46, .45, .94),box-shadow .2s cubic-bezier(.25, .46, .45, .94);
+  transition: border-radius .2s cubic-bezier(.25, .46, .45, .94),border-color .2s cubic-bezier(.25, .46, .45, .94),background-color .2s cubic-bezier(.25, .46, .45, .94),color .2s cubic-bezier(.25, .46, .45, .94),box-shadow .2s cubic-bezier(.25, .46, .45, .94);
+}
+
+
+/* query para celular */
 @media (min-height:600px) and (max-height:700px) {
   .home{
     padding-top: 70px;

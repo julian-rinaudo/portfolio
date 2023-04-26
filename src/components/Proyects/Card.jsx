@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 import ContentCard from "./ContentCard";
 
 const container = {
@@ -13,19 +14,23 @@ const container = {
   },
 };
 
-const Card = ({ id, alt, img, title, description, tech, deploy, github }) => {
+const Card = ({ alt, img, title, description, tech, deploy, github }) => {
+  const [enter, setEnter] = useState(false);
   return (
     <div className="px-[20px] flex flex-col mt-[45px]">
       <motion.div
+        onMouseEnter={() => setEnter(true)}
+        onMouseOut={() => setEnter(false)}
         initial={"hidden"}
         variants={container}
         transition={{ duration: 0.5 }}
         whileInView={"visible"}
         viewport={{ once: true, amount: 0.7 }}
-        className="min-h-[336px] max-h-[700px] max-w-[500px] bg-card"
+        className="min-h-[336px] cursor-pointer max-h-[700px] max-w-[500px] bg-card"
       >
         <ContentCard
-          id={id}
+          setEnter={setEnter}
+          enter={enter}
           img={img}
           alt={alt}
           title={title}

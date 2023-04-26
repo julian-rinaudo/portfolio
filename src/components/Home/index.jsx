@@ -1,4 +1,3 @@
-import React from "react";
 import { Link as LinkRoll } from "react-scroll";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -9,7 +8,10 @@ import Carrousel from "./Carrousel";
 import ImgJs from "../../assets/pseudo.png";
 import IconStar from "../../assets/63934072b143767c6aa620f8_start-icon.svg.png";
 import ImgCarrousel from "../../assets/carrousel.png";
+
+
 const Home = () => {
+
   return (
     <section className="flex flex-col bg-primary min-h-[100vh]">
       <div className="flex justify-end items-center p-5 gap-1">
@@ -69,7 +71,7 @@ const Home = () => {
         <div className="rounded-full drop-shadow-custom hover:drop-shadow-hover">
           <LinkRoll to="proyects" smooth={true}>
             <button
-              className="font-body border-[2px] border-secondary rounded-full text-[17px] font-medium text-white py-[16px] px-[27px] bg-secondary hover:border-[2px] 
+              className="button font-body border-[2px] border-secondary rounded-full text-[17px] font-medium text-white py-[16px] px-[27px] bg-secondary hover:border-[2px] 
        hover:border-secondary hover:bg-primary hover:text-secondary hover:rounded-[1rem]"
             >
               Proyectos
