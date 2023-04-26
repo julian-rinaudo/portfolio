@@ -1,7 +1,7 @@
 
 const Contact = () => {
   return (
-        <section className="proyects">
+        <section className="proyects bg-top">
             <div className=" h-[100vh]">
                 
             </div>

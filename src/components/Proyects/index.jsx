@@ -6,7 +6,7 @@ const Proyects = () => {
   return (
     <section
       id="proyects"
-      className=" proyects relative pb-[100px] w-[100%] bg-top bg-auto"
+      className=" proyects relative pb-[100px] w-[100%] bg-top bg-cover"
     >
       <motion.img
         initial={{ opacity: 0, x: 24 }}
@@ -26,31 +26,33 @@ const Proyects = () => {
       >
         Proyectos
       </motion.h2>
-      {proyects.map(
-        ({
-          id,
-          img,
-          alt,
-          title,
-          description,
-          technologies,
-          github,
-          deploy,
-        }) => {
-          return (
-            <Card
-              key={id}
-              img={img}
-              title={title}
-              description={description}
-              tech={technologies}
-              github={github}
-              deploy={deploy}
-              alt={alt}
-            />
-          );
-        }
-      )}
+      <div className="flex flex-wrap justify-center items-center">
+        {proyects.map(
+          ({
+            id,
+            img,
+            alt,
+            title,
+            description,
+            technologies,
+            github,
+            deploy,
+          }) => {
+            return (
+              <Card
+                key={id}
+                img={img}
+                title={title}
+                description={description}
+                tech={technologies}
+                github={github}
+                deploy={deploy}
+                alt={alt}
+              />
+            );
+          }
+        )}
+      </div>
     </section>
   );
 };
