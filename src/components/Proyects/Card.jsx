@@ -26,7 +26,7 @@ const Card = ({ alt, img, title, description, tech, deploy, github }) => {
         transition={{ duration: 0.5 }}
         whileInView={"visible"}
         viewport={{ once: true, amount: 0.7 }}
-        className="min-h-[336px] cursor-pointer max-h-[700px] max-w-[500px] bg-card"
+        className="rounded min-h-[336px] cursor-pointer max-h-[700px] max-w-[500px] bg-card"
       >
         <ContentCard
           setEnter={setEnter}

@@ -30,7 +30,7 @@ const ContentCard = ({
       <motion.div variants={item}>
         <div
           onMouseEnter={() => setEnter(true)}
-          className=" overflow-hidden min-h-[220px] bg-primary"
+          className="rounded overflow-hidden min-h-[220px] bg-primary"
         >
           <img
             className={`${

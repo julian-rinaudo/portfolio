@@ -2,6 +2,16 @@ import BrokenOffice from "../assets/Globant.png";
 const proyects = [
   {
     id: 1,
+    img: BrokenOffice,
+    title: "Broken Office",
+    description: "App para Globant",
+    technologies: ["React", "Redux", "Material UI"],
+    github: "https://github.com/orgs/BrokenOffice/repositories",
+    deploy: "",
+    alt:"img broken office"
+  },
+  {
+    id: 2,
     img: "",
     title: "TMDB",
     description: "App de peliculas y series",
@@ -17,16 +27,6 @@ const proyects = [
     github: "",
     deploy: "a",
     alt:"img tmdb"
-  },
-  {
-    id: 2,
-    img: BrokenOffice,
-    title: "Broken Office",
-    description: "App para Globant",
-    technologies: ["React", "Redux", "Material UI"],
-    github: "https://github.com/orgs/BrokenOffice/repositories",
-    deploy: "",
-    alt:"img broken office"
   },
   {
     id: 3,
