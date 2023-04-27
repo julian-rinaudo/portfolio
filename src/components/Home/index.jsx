@@ -8,10 +8,9 @@ import Carrousel from "./Carrousel";
 import ImgJs from "../../assets/pseudo.png";
 import IconStar from "../../assets/63934072b143767c6aa620f8_start-icon.svg.png";
 import ImgCarrousel from "../../assets/carrousel.png";
-
+import Btn from "../../commons/Btn"
 
 const Home = () => {
-
   return (
     <section className="flex flex-col bg-primary min-h-[100vh]">
       <div className="flex justify-end items-center p-5 gap-1">
@@ -68,16 +67,9 @@ const Home = () => {
         <p className="home_dev text-4xl font-body font-bold">Developer</p>
       </motion.div>
       <div className="flex justify-center items-center">
-        <div className="rounded-full drop-shadow-custom hover:drop-shadow-hover">
-          <LinkRoll to="proyects" smooth={true}>
-            <button
-              className="button font-body border-[2px] border-secondary rounded-full text-[17px] font-medium text-white py-[16px] px-[27px] bg-secondary hover:border-[2px] 
-       hover:border-secondary hover:bg-primary hover:text-secondary hover:rounded-[1rem]"
-            >
-              Proyectos
-            </button>
-          </LinkRoll>
-        </div>
+        <LinkRoll to="proyects" smooth={true}>
+          <Btn text={'proyectos'} size={17} py={16} px={27} />
+        </LinkRoll>
       </div>
       <div className="flex flex-col justify-center items-center">
         <img
