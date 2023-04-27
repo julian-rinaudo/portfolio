@@ -1,12 +1,16 @@
 import { useState } from "react";
-import { Toaster, toast } from "sonner";
+import { Toaster } from "sonner";
 import useSubmit from "../../hooks/useSubmit";
 import Form from "./Form";
 const Contact = () => {
   const [name, setName] = useState("");
-  const handleInputTextChange = (e) => setName(e);
+  const [email, setEmail] = useState("");
+  const [textArea, setTextArea] = useState("");
+  const handleInputTextChange = (e) => setName(e.target.value);
+  const handleInputEmailChange = (e) => setEmail(e.target.value);
+  const handleTextAreaChange = (e) => setTextArea(e.target.value);
 
-  const {loading, handleSubmit} = useSubmit()
+  const { loading, handleSubmit } = useSubmit(name, email, textArea);
 
   return (
     <section className="relative proyects bg-right-top">
@@ -21,6 +25,8 @@ const Contact = () => {
         <div className="flex justify-center py-[100px] px-[20px] ">
           <Form
             handleInputTextChange={handleInputTextChange}
+            handleInputEmailChange={handleInputEmailChange}
+            handleTextAreaChange={handleTextAreaChange}
             handleSubmit={handleSubmit}
             loading={loading}
           />

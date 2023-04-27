@@ -1,5 +1,5 @@
 import Btn from "../../commons/Btn";
-const Form = ({ handleInputTextChange, handleSubmit, loading }) => {
+const Form = ({ handleInputTextChange, handleSubmit, handleInputEmailChange, handleTextAreaChange ,loading }) => {
   return (
     <form
       onSubmit={handleSubmit}
@@ -19,6 +19,7 @@ const Form = ({ handleInputTextChange, handleSubmit, loading }) => {
       <label className="w-full flex flex-col text-white mb-[30px] text-[15px]">
         Email
         <input
+        onChange={(e) => handleInputEmailChange(e)}
           className=" bg-transparent border-b mt-1"
           type="email"
           name="email"
@@ -27,6 +28,7 @@ const Form = ({ handleInputTextChange, handleSubmit, loading }) => {
       <label className="w-full flex flex-col text-white text-[15px]">
         Descripción
         <textarea
+        onChange={(e) => handleTextAreaChange(e)}
           className="bg-transparent border-b mt-1"
           name="description"
           cols="30"
