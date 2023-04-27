@@ -8,7 +8,7 @@ import Carrousel from "./Carrousel";
 import ImgJs from "../../assets/pseudo.png";
 import IconStar from "../../assets/63934072b143767c6aa620f8_start-icon.svg.png";
 import ImgCarrousel from "../../assets/carrousel.png";
-import Btn from "../../commons/Btn"
+import Btn from "../../commons/Btn";
 
 const Home = () => {
   return (
@@ -68,7 +68,7 @@ const Home = () => {
       </motion.div>
       <div className="flex justify-center items-center">
         <LinkRoll to="proyects" smooth={true}>
-          <Btn text={'proyectos'} size={17} py={16} px={27} />
+          <Btn text={"proyectos"} />
         </LinkRoll>
       </div>
       <div className="flex flex-col justify-center items-center">

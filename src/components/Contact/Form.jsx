@@ -2,7 +2,7 @@ import Btn from "../../commons/Btn";
 const Form = ({ handleInputTextChange, handleSubmit, loading }) => {
   return (
     <form
-    onSubmit={handleSubmit}
+      onSubmit={handleSubmit}
       action="https://formsubmit.co/4e800379c3f49c4e513245d479a73207"
       method="POST"
       className="flex flex-col justify-center items-center gap-7 bg-card py-[51px] px-[38px] w-[500px] min-w-[300px] rounded"
@@ -33,9 +33,7 @@ const Form = ({ handleInputTextChange, handleSubmit, loading }) => {
           rows="3"
         ></textarea>
       </label>
-      <Btn 
-      loading={loading}
-      text={"enviar"} size={17} py={10} px={27} />
+      <Btn loading={loading} text={"enviar"} />
       <input type="hidden" name="_next" value="http://localhost:5173/" />
       <input type="hidden" name="_captcha" value="false" />
     </form>
