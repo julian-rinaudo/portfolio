@@ -1,28 +1,13 @@
 import { useState } from "react";
 import { Toaster, toast } from "sonner";
+import useSubmit from "../../hooks/useSubmit";
 import Form from "./Form";
 const Contact = () => {
   const [name, setName] = useState("");
-  const [loading, setLoading] = useState(false);
   const handleInputTextChange = (e) => setName(e);
 
-  const je = () => {
-    setTimeout(() => {
-      toast.message("Mensaje enviado correctamente  ✔", {
-        description: "Contestaré lo mas rapido que pueda ❤️",
-      });
-      setLoading(false);
-    }, 2500);
-  };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-    je();
-    setTimeout(() => {
-      e.target.submit();
-    }, 4000);
-    console.log("funciono");
-  };
+  const {loading, handleSubmit} = useSubmit()
+
   return (
     <section className="relative proyects bg-right-top">
       <Toaster position="top-center" />
