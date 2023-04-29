@@ -1,6 +1,8 @@
 import { useState } from "react";
+import {motion} from "framer-motion"
 import { Toaster } from "sonner";
 import useSubmit from "../../hooks/useSubmit";
+import imgCircular from "../../assets/circular-icon-header.svg.png"
 import Form from "./Form";
 const Contact = () => {
   const [name, setName] = useState("");
@@ -18,11 +20,21 @@ const Contact = () => {
       <div className="absolute top-[-10px] w-[100%] h-[35px] bg-black"></div>
       <div className="h-full">
         <div className="absolute top-[0] left-0 right-0">
-          <p className="text-white text-center text-[30px] font-body font-medium">
+          <motion.p 
+          initial={{ opacity: 0, y: 100 }}
+          transition={{ duration: 0.5 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          className="text-white text-center text-[30px] font-body font-medium">
             Trabajemos Juntos!
-          </p>
+          </motion.p>
         </div>
-        <div className="flex justify-center py-[100px] px-[20px] ">
+        <motion.div 
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 0.5 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        className="flex justify-center py-[100px] px-[20px] ">
           <Form
             handleInputTextChange={handleInputTextChange}
             handleInputEmailChange={handleInputEmailChange}
@@ -30,8 +42,14 @@ const Contact = () => {
             handleSubmit={handleSubmit}
             loading={loading}
           />
-        </div>
+        </motion.div>
       </div>
+      <motion.img 
+      initial={{ opacity: 0, x: -30 }}
+      transition={{ duration: 0.5 }}
+      whileInView={{ opacity: 1, x: 10 }}
+      viewport={{ once: false, amount: 0.7 }}
+      className="h-[80px] absolute bottom-0" src={imgCircular} alt="icon" />
     </section>
   );
 };
