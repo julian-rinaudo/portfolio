@@ -78,7 +78,7 @@ const About = () => {
             </div>
           </motion.div>
           <div className="flex flex-col justify-center items-center gap-[60px] pt-[100px]">
-            <Item img={ImgScrum} p1={"Metodologia SCRUM"} p2={"Aplicada varios a proyectos grupales"} />
+            <Item img={ImgScrum} p1={"Metodologia SCRUM"} p2={"Aplicada en proyectos grupales"} />
             <Item img={ImgComputer} p1={"+ 800 horas"} p2={"Bootcamp de Javascript 10hs por dia"} />
             <Item img={ImgPairProgramm} p1={"Pair Programming"} p2={"Compañeros diferente todos los dias durante 2 meses"}/>
           </div>
