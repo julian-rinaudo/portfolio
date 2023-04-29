@@ -1,6 +1,9 @@
-import ImgArrow from "../../assets/curved-arrow-with-broken-line.png";
-import ImgComputer from "../../assets/computer.svg";
 import { motion } from "framer-motion";
+import ImgComputer from "../../assets/computer.svg";
+import ImgPairProgramm from "../../assets/scrum.svg";
+import ImgScrum from "../../assets/pair-programming.svg";
+import Item from "../../commons/Item";
+
 const About = () => {
   return (
     <section className=" bg-primary font-body px-5 min-h-full">
@@ -74,20 +77,12 @@ const About = () => {
               <span className=" text-orange-300">{"}"}</span> ;
             </div>
           </motion.div>
-        </div>
-        {/* <motion.div
-          initial={{ opacity: 0, y: 100 }}
-          transition={{ duration: 0.5 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.7 }}
-          className="flex justify-center items-center gap-2 pt-12"
-        >
-          <img className="w-[60px]" src={ImgComputer} alt="computer" />
-          <div className="text-[13px]">
-            <p className="font-bold">+800 Horas</p>
-            <p>Programando</p>
+          <div className="flex flex-col justify-center items-center gap-[60px] pt-[100px]">
+            <Item img={ImgScrum} p1={"Metodologia SCRUM"} p2={"Aplicada varios a proyectos grupales"} />
+            <Item img={ImgComputer} p1={"+ 800 horas"} p2={"Bootcamp de Javascript 10hs por dia"} />
+            <Item img={ImgPairProgramm} p1={"Pair Programming"} p2={"Compañeros diferente todos los dias durante 2 meses"}/>
           </div>
-        </motion.div> */}
+        </div>
       </div>
     </section>
   );
