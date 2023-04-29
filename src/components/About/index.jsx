@@ -37,28 +37,34 @@ const About = () => {
               <div className=" ml-5 mt-[-10px]">
                 <span className="text-red-500">
                   {" "}
-                  name: <span className="text-[#6ba564]">"Julian",</span>
+                  name<span className="text-white">:</span>{" "}
+                  <span className="text-[#6ba564]">"Julian"</span>
                 </span>
+                ,
                 <br />
                 <span className="text-red-500">
                   {" "}
-                  lastName: <span className="text-[#6ba564]">"Rinaudo",</span>
+                  lastName<span className="text-white">:</span>{" "}
+                  <span className="text-[#6ba564]">"Rinaudo"</span>
                 </span>
+                ,
                 <br />
                 <span className="text-red-500">
                   {" "}
-                  age: <span className="text-orange-300">22,</span>
-                </span>{" "}
-                <br />
+                  age<span className="text-white">:</span>{" "}
+                  <span className="text-orange-300">22</span>
+                </span>
+                , <br />
                 <span className="text-red-500">
                   {" "}
-                  education: <span className="text-[#7c6ad7]">{"["}</span>
+                  education<span className="text-white">:</span>{" "}
+                  <span className="text-[#7c6ad7]">{"["}</span>
                 </span>{" "}
                 <br />
                 <span className="ml-4 text-[#6ba564]">
-                  "Bootcamp FullStack de JS",
-                </span>{" "}
-                <br />
+                  "Bootcamp FullStack de JS"
+                </span>
+                , <br />
                 <span className="ml-4 text-[#6ba564]">
                   "Técnico Marketing"
                 </span>{" "}
