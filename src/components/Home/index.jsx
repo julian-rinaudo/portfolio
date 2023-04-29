@@ -18,14 +18,14 @@ const Home = () => {
           <UseAnimations
             className="cursor-pointer"
             animation={linkdin}
-            size={30}
+            size={32}
           />
         </Link>
         <Link to={"https://github.com/julian-rinaudo"}>
           <UseAnimations
             className="cursor-pointer"
             animation={github}
-            size={30}
+            size={32}
           />
         </Link>
       </div>
@@ -39,7 +39,7 @@ const Home = () => {
         transition={{ duration: 0.5 }}
         whileInView={{ opacity: 1, x: 10 }}
         viewport={{ once: false, amount: 0.7 }}
-        className=" w-5 absolute top-16 left-6"
+        className=" w-5 absolute top-16 left-6 md:w-[25px] md:top-[280px] md:left-[100px] 2xl:w-[30px]" 
         src={IconStar}
         alt="start icon"
       />
@@ -48,7 +48,8 @@ const Home = () => {
         transition={{ duration: 0.5 }}
         whileInView={{ opacity: 1, x: -10 }}
         viewport={{ once: false, amount: 0.7 }}
-        className=" w-8 absolute bottom-[35%] right-8"
+        className=" w-8 absolute bottom-[45%] right-8 md:w-[40px] md:bottom-[40%] md:right-[100px] 
+        lg:right-[170px] 2xl:w-[48px] 2xl:bottom-[200px] 2xl:right-[300px]"
         src={IconStar}
         alt="start icon"
       />
@@ -57,14 +58,26 @@ const Home = () => {
         transition={{ duration: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
-        className="home text-center text-3xl pt-[150px] pb-28 px-4"
+        className="home text-center pt-[150px] 2xl:pt-[200px] pb-28 px-4"
       >
-        <p className="home_name font-body font-semibold">Soy Julian Rinaudo</p>
-        <div className="flex justify-center items-center text-4xl gap-2">
-          <p className="home_stack font-body font-bold">FullStack</p>
-          <img className=" object-contain w-24" src={ImgJs} alt="icon JS" />
+        <p className="home_name font-body font-semibold text-3xl sm:text-4xl sm:pb-3 md:text-[45px] lg:text-[55px] lg:pb-5 xl:text-[65px] xl:pb-10 2xl:text-[75px]">
+          Soy Julian Rinaudo
+        </p>
+        <div className="flex justify-center flex-col items-center md:flex-row md:gap-2 ">
+          <div className="flex justify-center items-center gap-2 md:gap-0">
+            <p className="home_stack font-body font-bold text-4xl sm:text-[42px] sm:pb-3 md:text-[52px] md:pb-0 lg:text-[65px] xl:text-[75px] 2xl:text-[85px]">
+              FullStack
+            </p>
+            <img
+              className=" object-contain w-24 sm:pb-3 md:w-[130px] md:pb-0 lg:w-[140px] xl:w-[130px] 2xl:w-[150px]"
+              src={ImgJs}
+              alt="icon JS"
+            />
+          </div>
+          <p className="home_dev text-4xl font-body font-bold sm:text-[42px] md:text-[50px] lg:text-[60px] xl:text-[75px] 2xl:text-[85px]">
+            Developer
+          </p>
         </div>
-        <p className="home_dev text-4xl font-body font-bold">Developer</p>
       </motion.div>
       <div className="flex justify-center items-center">
         <LinkRoll to="proyects" smooth={true}>
@@ -73,11 +86,11 @@ const Home = () => {
       </div>
       <div className="flex flex-col justify-center items-center">
         <img
-          className="w-full max-[640px]:h-[240px]"
+          className="w-full max-[640px]:h-[240px] "
           src={ImgCarrousel}
           alt="carrosel"
         />
-        <div className="absolute flex justify-center items-center w-[85%] h-12 overflow-hidden">
+        <div className="absolute flex justify-center items-center w-[85%] h-12 overflow-hidden lg:h-[100px]">
           <div className="flex items-center w-[100%]">
             <Carrousel />
           </div>

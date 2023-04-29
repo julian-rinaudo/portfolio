@@ -42,7 +42,7 @@ const Carrousel = () => {
               alignItems: "center",
             }}
           >
-            <img className={"h-[45px]"} src={url} alt={alt} />
+            <img className={"h-[45px] lg:h-[55px] xl:lg:h-[70px]"} src={url} alt={alt} />
           </SwiperSlide>
         );
       })}
