@@ -13,7 +13,7 @@ const About = () => {
           transition={{ duration: 0.5 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
-          className="text-center font-medium text-[40px] pt-[100px]"
+          className="text-center font-medium text-[40px] pt-[60px]"
         >
           Sobre mi
         </motion.h1>
