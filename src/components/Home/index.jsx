@@ -34,6 +34,7 @@ const Home = () => {
         src="src/assets/63a0c6b60bea3337228ddf1b_orange-bracket-icon.webp.png"
         alt="orange-bracket"
       /> */}
+      
       <motion.img
         initial={{ opacity: 0, x: -30 }}
         transition={{ duration: 0.5 }}
