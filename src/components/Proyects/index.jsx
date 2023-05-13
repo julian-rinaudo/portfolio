@@ -22,7 +22,7 @@ const Proyects = () => {
         transition={{ duration: 0.5 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.7 }}
-        className=" text-white text-center py-20 text-[40px] font-body font-medium"
+        className=" text-white text-center py-20 text-[40px] font-body font-medium lg:text-[60px]"
       >
         Proyectos
       </motion.h2>

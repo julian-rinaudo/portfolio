@@ -7,7 +7,7 @@ const CodeWindow = () => {
       transition={{ duration: 0.5 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
-      className="window-shadow w-full max-w-[600px] bg-[#292928] h-[340px] rounded-[10px] p-3"
+      className="window-shadow w-full max-w-[600px] bg-[#292928] h-[340px] p-3 rounded-[10px] m-auto lg:m-0"
     >
       <div className="flex gap-2 pb-9">
         <div className="w-[13px] h-[13px] bg-[#ff5e57] rounded-full"></div>
@@ -16,7 +16,7 @@ const CodeWindow = () => {
       </div>
       <div className=" w-full text-white ml-5">
         <span className=" text-[#7c6ad7]">const </span>
-        <span className="text-yellow-400">person </span>
+        <span className="text-yellow-400">developer </span>
         <span className="text-[#2bbac5]">= </span>
         <span className=" text-orange-300">{"{"}</span>
         <br />
@@ -44,6 +44,12 @@ const CodeWindow = () => {
           , <br />
           <span className="text-red-500">
             {" "}
+            country<span className="text-white">:</span>{" "}
+            <span className="text-[#6ba564]">"Argentina"</span>
+          </span>
+          <br />
+          <span className="text-red-500">
+            {" "}
             education<span className="text-white">:</span>{" "}
             <span className="text-[#7c6ad7]">{"["}</span>
           </span>{" "}
@@ -52,7 +58,7 @@ const CodeWindow = () => {
             "Bootcamp FullStack de JS"
           </span>
           , <br />
-          <span className="ml-4 text-[#6ba564]">"Técnico Marketing"</span>{" "}
+          <span className="ml-4 text-[#6ba564]">"Técnico en Marketing"</span>{" "}
           <br />
           <span className="text-[#7c6ad7]">{"]"}</span> <br />
         </div>
