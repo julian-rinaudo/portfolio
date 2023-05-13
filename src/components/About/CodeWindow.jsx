@@ -47,7 +47,7 @@ const CodeWindow = () => {
             country<span className="text-white">:</span>{" "}
             <span className="text-[#6ba564]">"Argentina"</span>
           </span>
-          <br />
+          , <br />
           <span className="text-red-500">
             {" "}
             education<span className="text-white">:</span>{" "}
