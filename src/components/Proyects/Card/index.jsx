@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import ContentCard from "./ContentCard";
+import ContentCard from "./CardContent";
 
 const container = {
   hidden: { opacity: 1, scale: 0 },

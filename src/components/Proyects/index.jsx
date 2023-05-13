@@ -26,7 +26,7 @@ const Proyects = () => {
       >
         Proyectos
       </motion.h2>
-      <div className="flex flex-wrap justify-center items-center">
+      <div className="flex flex-wrap justify-center ">
         {proyects.map(
           ({
             id,
