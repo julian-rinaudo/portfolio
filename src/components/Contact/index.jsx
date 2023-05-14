@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Toaster } from "sonner";
 import useSubmit from "../../hooks/useSubmit";
-import imgCircular from "../../assets/circular-icon-header.svg.png";
 import Form from "./Form";
 const Contact = () => {
   const [name, setName] = useState("");

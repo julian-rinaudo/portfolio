@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import UseAnimations from "react-useanimations";
 import github from "react-useanimations/lib/github";
 import linkdin from "react-useanimations/lib/linkedin";
+import scrollDown from "react-useanimations/lib/scrollDown";
 import Carrousel from "./Carrousel";
 import ImgJs from "../../assets/pseudo.png";
 import IconStar from "../../assets/63934072b143767c6aa620f8_start-icon.svg.png";
@@ -77,18 +78,31 @@ const Home = () => {
           </p>
         </div>
       </motion.div>
-      <div className="flex justify-center items-center">
+      <div className="flex flex-col justify-center items-center gap-[30px] sm:flex-row">
         <LinkRoll to="proyects" smooth={true}>
           <Btn text={"proyectos"} />
         </LinkRoll>
+        <Link
+          target="_blank"
+          to={
+            "https://drive.google.com/file/d/1Ery_q5BxQiZvE76YUNQijG5s3OXpXowa/view?usp=sharing"
+          }
+        >
+          <Btn text={"Mi CV"} />
+        </Link>
       </div>
       <div className="flex flex-col justify-center items-center relative">
+      <UseAnimations
+            className="hidden absolute top-[60px] opacity-[0.7] lg:block"
+            animation={scrollDown}
+            size={40}
+          />
         <motion.img
           initial={{ opacity: 0, x: 30 }}
           transition={{ duration: 0.5 }}
           whileInView={{ opacity: 1, x: -10 }}
           viewport={{ once: true }}
-          className="w-8 absolute top-[-50px] right-8 md:w-[25px] md:right-[200px] "
+          className="w-8 absolute top-[-50px] right-8 md:w-[25px] md:right-[100px] lg:right-[150px]"
           src={IconStar}
           alt="start icon"
         />
