@@ -1,6 +1,6 @@
 import React from "react";
 
-const TechContent = ({setEnter, setOpen, open, arrOfTech, tech}) => {
+const TechContent = ({ setEnter, setOpen, open, arrOfTech, tech }) => {
   return (
     <div
       onMouseEnter={() => setEnter(true)}
@@ -29,13 +29,13 @@ const TechContent = ({setEnter, setOpen, open, arrOfTech, tech}) => {
               </p>
             );
           })}
-      {tech.length > 3 && !open && (
+      {tech.length > 3 && (
         <div className="flex flex-col justify-end h-[32px]">
           <span
             onClick={() => setOpen(!open)}
-            className="text-primary hover:text-orange-300"
+            className="text-primary hover:opacity-[.5]"
           >
-            ... Más{" "}
+            {open ? "... Menos" : "... Más"}
           </span>
         </div>
       )}
