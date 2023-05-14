@@ -36,7 +36,7 @@ const Form = ({ handleInputTextChange, handleSubmit, handleInputEmailChange, han
         ></textarea>
       </label>
       <Btn loading={loading} text={"enviar"} />
-      <input type="hidden" name="_next" value="http://localhost:5173/" />
+      <input type="hidden" name="_next" value="https://portfolio-julian-rinaudo.vercel.app/" />
       <input type="hidden" name="_captcha" value="false" />
     </form>
   );
