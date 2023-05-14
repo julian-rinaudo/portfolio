@@ -130,7 +130,7 @@ const Home = () => {
           src={ImgCarrousel}
           alt="carrosel"
         />
-        <div className="absolute flex justify-center items-center w-[85%] h-12 overflow-hidden lg:h-[100px]">
+        <div className="logos absolute flex justify-center items-center w-[85%] h-12 overflow-hidden lg:h-[100px]">
           <div className="flex items-center w-[100%]">
             <Carrousel />
           </div>
