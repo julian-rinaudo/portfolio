@@ -2,9 +2,11 @@ import { Link as LinkRoll } from "react-scroll";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import UseAnimations from "react-useanimations";
+import dribbble from "react-useanimations/lib/dribbble";
 import github from "react-useanimations/lib/github";
 import linkdin from "react-useanimations/lib/linkedin";
 import scrollDown from "react-useanimations/lib/scrollDown";
+import { useTranslation } from 'react-i18next';
 import Carrousel from "./Carrousel";
 import ImgJs from "../../assets/pseudo.png";
 import IconStar from "../../assets/63934072b143767c6aa620f8_start-icon.svg.png";
@@ -13,11 +15,14 @@ import OrangeBracket from "../../assets/63a0c6b60bea3337228ddf1b_orange-bracket-
 import BlueBracket from "../../assets/63a0c6b6c43de849388e0475_blue-bracket-icon.webp.png";
 import imgCircular from "../../assets/circular-icon-header.svg.png";
 import Btn from "../../commons/Btn";
+import LanguageSelector from "../../commons/LanguajeSelector";
 
 const Home = () => {
+  const { t } = useTranslation();
   return (
-    <section className="flex flex-col bg-primary min-h-[100vh]">
+    <section className="flex flex-col bg-primary  min-h-[100vh]">
       <div className="flex justify-end items-center p-5 gap-1">
+        <LanguageSelector />
         <Link to={"https://www.linkedin.com/in/julian-rinaudo/"}>
           <UseAnimations
             className="cursor-pointer"
@@ -60,7 +65,7 @@ const Home = () => {
         className="home text-center pt-[150px] lg:pt-[120px] 2xl:pt-[200px] pb-28 px-4"
       >
         <p className="home_name font-body font-semibold text-3xl sm:text-4xl sm:pb-3 md:text-[45px] lg:text-[55px] lg:pb-5 xl:text-[65px] xl:pb-10 2xl:text-[75px]">
-          Soy Julian Rinaudo
+          {t('title')}
         </p>
         <div className="flex justify-center flex-col items-center md:flex-row md:gap-2 ">
           <div className="flex justify-center items-center gap-2 md:gap-0">
@@ -80,7 +85,7 @@ const Home = () => {
       </motion.div>
       <div className="flex flex-col justify-center items-center gap-[30px] sm:flex-row">
         <LinkRoll to="proyects" smooth={true}>
-          <Btn text={"proyectos"} />
+          <Btn text={t('btn.1')} />
         </LinkRoll>
         <Link
           target="_blank"
@@ -88,7 +93,7 @@ const Home = () => {
             "https://drive.google.com/file/d/1Ery_q5BxQiZvE76YUNQijG5s3OXpXowa/view?usp=sharing"
           }
         >
-          <Btn text={"Mi CV"} />
+          <Btn text={t('btn.2')} />
         </Link>
       </div>
       <div className="flex flex-col justify-center items-center relative">
