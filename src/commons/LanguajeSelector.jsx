@@ -9,7 +9,7 @@ function LanguageSelector() {
   };
 
   return (
-    <select value={languaje} onChange={changeLanguage} class="appearance-none outline-none text-[17px] px-4 rounded-md bg-transparent text-gray-700 cursor-pointer">
+    <select value={languaje} onChange={changeLanguage} className="appearance-none outline-none text-[17px] px-4 rounded-md bg-transparent text-gray-700 cursor-pointer">
       <option value="es">🇪🇸 Español</option>
       <option value="en">🇬🇧 English</option>
     </select>
