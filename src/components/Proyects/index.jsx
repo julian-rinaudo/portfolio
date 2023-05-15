@@ -2,7 +2,9 @@ import { motion } from "framer-motion";
 import iconBlue from "../../assets/639c93db3dd0bf18b1ae768a_blue-square-icon.svg";
 import Card from "./Card";
 import proyects from "../../utils/proyects";
+import { useTranslation } from "react-i18next";
 const Proyects = () => {
+  const { t } = useTranslation();
   return (
     <section
       id="proyects"
@@ -24,7 +26,7 @@ const Proyects = () => {
         viewport={{ once: true, amount: 0.7 }}
         className=" text-white text-center py-20 text-[40px] font-body font-medium lg:text-[60px]"
       >
-        Proyectos
+        {t("proyects")}
       </motion.h2>
       <div className="flex flex-wrap justify-center ">
         {proyects.map(

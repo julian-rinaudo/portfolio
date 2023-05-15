@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const TechContent = ({ setEnter, setOpen, open, arrOfTech, tech }) => {
+  const { t } = useTranslation();
   return (
     <div
       onMouseEnter={() => setEnter(true)}
@@ -35,7 +37,7 @@ const TechContent = ({ setEnter, setOpen, open, arrOfTech, tech }) => {
             onClick={() => setOpen(!open)}
             className="text-primary hover:opacity-[.5]"
           >
-            {open ? "... Menos" : "... Más"}
+            {open ? t('less') : t('more')}
           </span>
         </div>
       )}

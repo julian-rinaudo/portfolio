@@ -1,5 +1,7 @@
+import { useTranslation } from "react-i18next";
 import Btn from "../../commons/Btn";
 const Form = ({ handleInputTextChange, handleSubmit, handleInputEmailChange, handleTextAreaChange ,loading }) => {
+  const {t} = useTranslation()
   return (
     <form
       onSubmit={handleSubmit}
@@ -8,7 +10,7 @@ const Form = ({ handleInputTextChange, handleSubmit, handleInputEmailChange, han
       className="flex flex-col justify-center items-center gap-7 bg-card py-[51px] px-[38px] w-[500px] min-w-[300px] rounded"
     >
       <label className="w-full flex flex-col text-white text-[15px]">
-        Nombre
+        {t('label.name')}
         <input
           onChange={(e) => handleInputTextChange(e)}
           className=" bg-transparent border-b mt-1"
@@ -17,7 +19,7 @@ const Form = ({ handleInputTextChange, handleSubmit, handleInputEmailChange, han
         />
       </label>
       <label className="w-full flex flex-col text-white mb-[30px] text-[15px]">
-        Email
+        {t('label.email')}
         <input
         onChange={(e) => handleInputEmailChange(e)}
           className=" bg-transparent border-b mt-1"
@@ -26,7 +28,7 @@ const Form = ({ handleInputTextChange, handleSubmit, handleInputEmailChange, han
         />
       </label>
       <label className="w-full flex flex-col text-white text-[15px]">
-        Descripción
+        {t('label.textarea')}
         <textarea
         onChange={(e) => handleTextAreaChange(e)}
           className="bg-transparent border-b mt-1"
@@ -35,7 +37,7 @@ const Form = ({ handleInputTextChange, handleSubmit, handleInputEmailChange, han
           rows="3"
         ></textarea>
       </label>
-      <Btn loading={loading} text={"enviar"} />
+      <Btn loading={loading} text={t("btn.3")} />
       <input type="hidden" name="_next" value="https://portfolio-julian-rinaudo.vercel.app/" />
       <input type="hidden" name="_captcha" value="false" />
     </form>

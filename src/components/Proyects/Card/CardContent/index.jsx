@@ -31,7 +31,7 @@ const ContentCard = ({
 
   return (
     <>
-      <ImgContent setEnter={setEnter} enter={enter} img={img} alt={alt} />
+      <ImgContent setEnter={setEnter} enter={enter} img={img} alt={alt} item={item}/>
       <div onMouseEnter={() => setEnter(true)} className="py-[20px] px-[15px]">
         <p
           onMouseEnter={() => setEnter(true)}

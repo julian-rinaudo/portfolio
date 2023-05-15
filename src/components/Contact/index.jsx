@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Toaster } from "sonner";
 import useSubmit from "../../hooks/useSubmit";
 import Form from "./Form";
+import { useTranslation } from "react-i18next";
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -12,6 +13,8 @@ const Contact = () => {
   const handleTextAreaChange = (e) => setTextArea(e.target.value);
 
   const { loading, handleSubmit } = useSubmit(name, email, textArea);
+
+  const {t} = useTranslation()
 
   return (
     <section className="relative proyects bg-right-top">
@@ -26,7 +29,7 @@ const Contact = () => {
             viewport={{ once: true, amount: 0.3 }}
             className="text-white text-center text-[30px] font-body font-medium lg:text-[40px]"
           >
-            Trabajemos Juntos!
+            {t('contact')}
           </motion.p>
         </div>
         <motion.div
