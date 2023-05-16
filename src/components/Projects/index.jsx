@@ -26,7 +26,7 @@ const Proyects = () => {
         viewport={{ once: true, amount: 0.7 }}
         className=" text-white text-center py-20 text-[40px] font-body font-medium lg:text-[60px]"
       >
-        {t("proyects")}
+        {t("projects")}
       </motion.h2>
       <div className="flex flex-wrap justify-center ">
         {proyects.map(

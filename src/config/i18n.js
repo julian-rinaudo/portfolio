@@ -13,7 +13,7 @@ i18n
         translation: {
           "title": "I'm, Julián Rinaudo",
           "btn": {
-            1:"Proyects",
+            1:"Projects",
             2:"My CV",
             3:"Send"
           },
@@ -23,7 +23,7 @@ i18n
           "hours": "+ 800 hours",
           "bootcamp": "Javascript Bootcamp 10hs per day",
           "pair": "Different partners every day for 2 months",
-          "proyects": "Proyects",
+          "projects": "Projects",
           "tooltip": "Go To GitHub!",
           "more": "...More",
           "less": "...Less",
@@ -49,7 +49,7 @@ i18n
           "hours": "+ 800 horas",
           "bootcamp": "Bootcamp de Javascript 10hs por dia",
           "pair": "Compañeros diferente todos los dias durante 2 meses",
-          "proyects": "Proyectos",
+          "projects": "Proyectos",
           "tooltip": "Ir al GitHub!",
           "more": "...Más",
           "less": "...Menos",
