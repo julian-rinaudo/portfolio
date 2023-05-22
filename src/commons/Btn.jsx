@@ -1,5 +1,3 @@
-import UseAnimations from "react-useanimations";
-import loadingv2 from "react-useanimations/lib/loading2";
 import PuffLoader from "react-spinners/PuffLoader";
 
 const Btn = ({ text, loading }) => {
