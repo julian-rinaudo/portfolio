@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { Toaster } from "sonner";
 import useSubmit from "../../hooks/useSubmit";
 import Form from "./Form";
-import { useTranslation } from "react-i18next";
+import BtnScroll from "../../commons/BtnScroll";
+import { Link as LinkRoll } from "react-scroll";
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -12,9 +14,21 @@ const Contact = () => {
   const handleInputEmailChange = (e) => setEmail(e.target.value);
   const handleTextAreaChange = (e) => setTextArea(e.target.value);
 
+  //mostrar btnScroll
+  const [show, setShow] = useState(false);
+
+  window.onscroll = function () {
+    let y = window.scrollY;
+    if (y > 700) {
+      setShow(true);
+    } else {
+      setShow(false);
+    }
+  };
+
   const { loading, handleSubmit } = useSubmit(name, email, textArea);
 
-  const {t} = useTranslation()
+  const { t } = useTranslation();
 
   return (
     <section className="relative proyects bg-right-top">
@@ -29,7 +43,7 @@ const Contact = () => {
             viewport={{ once: true, amount: 0.3 }}
             className="text-white text-center text-[30px] font-body font-medium lg:text-[40px]"
           >
-            {t('contact')}
+            {t("contact")}
           </motion.p>
         </div>
         <motion.div
@@ -48,6 +62,11 @@ const Contact = () => {
           />
         </motion.div>
       </div>
+      {show && (
+        <LinkRoll to="home" smooth={true}>
+          <BtnScroll />
+        </LinkRoll>
+      )}
     </section>
   );
 };

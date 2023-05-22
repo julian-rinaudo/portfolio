@@ -2,7 +2,6 @@ import { Link as LinkRoll } from "react-scroll";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import UseAnimations from "react-useanimations";
-import dribbble from "react-useanimations/lib/dribbble";
 import github from "react-useanimations/lib/github";
 import linkdin from "react-useanimations/lib/linkedin";
 import scrollDown from "react-useanimations/lib/scrollDown";
@@ -20,7 +19,7 @@ import LanguageSelector from "../../commons/LanguajeSelector";
 const Home = () => {
   const { t } = useTranslation();
   return (
-    <section className="flex flex-col bg-primary  min-h-[100vh]">
+    <section id='home' className="flex flex-col bg-primary  min-h-[100vh]">
       <div className="flex justify-end items-center p-5 gap-1">
         <LanguageSelector />
         <Link to={"https://www.linkedin.com/in/julian-rinaudo/"}>
